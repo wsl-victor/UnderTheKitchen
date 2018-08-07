@@ -14,6 +14,7 @@
 		7DD3CCA7211937A800D2BCBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DD3CCA5211937A800D2BCBE /* LaunchScreen.storyboard */; };
 		7DD3CCB2211937A800D2BCBE /* UnderTheKitchen_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD3CCB1211937A800D2BCBE /* UnderTheKitchen_SwiftTests.swift */; };
 		7DD3CCBD211937A800D2BCBE /* UnderTheKitchen_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD3CCBC211937A800D2BCBE /* UnderTheKitchen_SwiftUITests.swift */; };
+		7DD3CD0A2119816D00D2BCBE /* PanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD3CD092119816D00D2BCBE /* PanelView.swift */; };
 		A9AA64EB86858E42D0DE5487 /* Pods_UnderTheKitchen_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC520E2DC726774A6DD5063B /* Pods_UnderTheKitchen_Swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		7DD3CCB8211937A800D2BCBE /* UnderTheKitchen-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UnderTheKitchen-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DD3CCBC211937A800D2BCBE /* UnderTheKitchen_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderTheKitchen_SwiftUITests.swift; sourceTree = "<group>"; };
 		7DD3CCBE211937A800D2BCBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DD3CD092119816D00D2BCBE /* PanelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanelView.swift; sourceTree = "<group>"; };
 		FC520E2DC726774A6DD5063B /* Pods_UnderTheKitchen_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnderTheKitchen_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -112,6 +114,7 @@
 		7DD3CC9B211937A400D2BCBE /* UnderTheKitchen-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				7DD3CD08211980A800D2BCBE /* ToolLib */,
 				7DD3CC9C211937A400D2BCBE /* AppDelegate.swift */,
 				7DD3CC9E211937A400D2BCBE /* ViewController.swift */,
 				7DD3CCA0211937A400D2BCBE /* Main.storyboard */,
@@ -138,6 +141,14 @@
 				7DD3CCBE211937A800D2BCBE /* Info.plist */,
 			);
 			path = "UnderTheKitchen-SwiftUITests";
+			sourceTree = "<group>";
+		};
+		7DD3CD08211980A800D2BCBE /* ToolLib */ = {
+			isa = PBXGroup;
+			children = (
+				7DD3CD092119816D00D2BCBE /* PanelView.swift */,
+			);
+			path = ToolLib;
 			sourceTree = "<group>";
 		};
 		D5D2DE3F89C2B93A93BBEEBD /* Pods */ = {
@@ -345,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DD3CD0A2119816D00D2BCBE /* PanelView.swift in Sources */,
 				7DD3CC9F211937A400D2BCBE /* ViewController.swift in Sources */,
 				7DD3CC9D211937A400D2BCBE /* AppDelegate.swift in Sources */,
 			);
@@ -521,8 +533,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2MSHCVV74T;
 				INFOPLIST_FILE = "UnderTheKitchen-Swift/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wsl.UnderTheKitchen-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -536,8 +553,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2MSHCVV74T;
 				INFOPLIST_FILE = "UnderTheKitchen-Swift/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wsl.UnderTheKitchen-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -552,7 +574,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "UnderTheKitchen-SwiftTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wsl.UnderTheKitchen-SwiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -568,7 +594,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "UnderTheKitchen-SwiftTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wsl.UnderTheKitchen-SwiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -583,7 +613,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "UnderTheKitchen-SwiftUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wsl.UnderTheKitchen-SwiftUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -598,7 +632,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "UnderTheKitchen-SwiftUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wsl.UnderTheKitchen-SwiftUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
