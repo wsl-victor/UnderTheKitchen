@@ -7,7 +7,8 @@
 //
 
 #import "UTKMeController.h"
-
+#import "UTKMeSettingViewController.h"
+#import "UTKMeSearchFriendViewController.h"
 @interface UTKMeController ()
 
 @end
@@ -22,14 +23,21 @@
 }
 
 -(void)leftNavOnClick{
+    UTKMeSettingViewController *meSettingVc = [[UTKMeSettingViewController alloc] init];
+    meSettingVc.title = @"设置";
+    [self.navigationController pushViewController:meSettingVc animated:YES];
     
 }
 
 -(void)rightnavFindFriendsOnClick{
-    
+    UTKMeSearchFriendViewController *meSearchFriendVc = [[UTKMeSearchFriendViewController alloc] init];
+    [self.navigationController pushViewController:meSearchFriendVc animated:YES];
 }
 
 -(void)rightNavPageSettingOnClick{
+    UTKMeSettingViewController *meSettingVc = [[UTKMeSettingViewController alloc] init];
+    meSettingVc.title = @"设置";
+    [self.navigationController pushViewController:meSettingVc animated:YES];
     
 }
 

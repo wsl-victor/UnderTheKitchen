@@ -28,6 +28,9 @@
 		7DDF65A22126CFCB00A6AE4F /* UIButton+UTKExtensionPostion.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDF65A12126CFCB00A6AE4F /* UIButton+UTKExtensionPostion.m */; };
 		7DDF65A42126D57900A6AE4F /* placeholder in Resources */ = {isa = PBXBuildFile; fileRef = 7DDF65A32126D57900A6AE4F /* placeholder */; };
 		7DDF65A62126D59100A6AE4F /* placeholder in Resources */ = {isa = PBXBuildFile; fileRef = 7DDF65A52126D59100A6AE4F /* placeholder */; };
+		7DDF65A92126D78400A6AE4F /* UTKBasketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDF65A82126D78400A6AE4F /* UTKBasketViewController.m */; };
+		7DDF65AC2126D8E500A6AE4F /* UTKMeSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDF65AB2126D8E500A6AE4F /* UTKMeSettingViewController.m */; };
+		7DDF65AF2126D97000A6AE4F /* UTKMeSearchFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDF65AE2126D97000A6AE4F /* UTKMeSearchFriendViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +90,12 @@
 		7DDF65A12126CFCB00A6AE4F /* UIButton+UTKExtensionPostion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+UTKExtensionPostion.m"; sourceTree = "<group>"; };
 		7DDF65A32126D57900A6AE4F /* placeholder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = placeholder; sourceTree = "<group>"; };
 		7DDF65A52126D59100A6AE4F /* placeholder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = placeholder; sourceTree = "<group>"; };
+		7DDF65A72126D78400A6AE4F /* UTKBasketViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UTKBasketViewController.h; sourceTree = "<group>"; };
+		7DDF65A82126D78400A6AE4F /* UTKBasketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UTKBasketViewController.m; sourceTree = "<group>"; };
+		7DDF65AA2126D8E500A6AE4F /* UTKMeSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UTKMeSettingViewController.h; sourceTree = "<group>"; };
+		7DDF65AB2126D8E500A6AE4F /* UTKMeSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UTKMeSettingViewController.m; sourceTree = "<group>"; };
+		7DDF65AD2126D97000A6AE4F /* UTKMeSearchFriendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UTKMeSearchFriendViewController.h; sourceTree = "<group>"; };
+		7DDF65AE2126D97000A6AE4F /* UTKMeSearchFriendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UTKMeSearchFriendViewController.m; sourceTree = "<group>"; };
 		8CEE54B9963643EE003BF3C1 /* Pods-UnderTheKitchen-OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnderTheKitchen-OC.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnderTheKitchen-OC/Pods-UnderTheKitchen-OC.release.xcconfig"; sourceTree = "<group>"; };
 		D1D36FEED121F2FE791F0DDF /* Pods-UnderTheKitchen-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnderTheKitchen-OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnderTheKitchen-OC/Pods-UnderTheKitchen-OC.debug.xcconfig"; sourceTree = "<group>"; };
 		F712F5A005AEBC0EA583A556 /* Pods_UnderTheKitchen_OC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnderTheKitchen_OC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -400,6 +409,10 @@
 			children = (
 				7DDF65922126ADAF00A6AE4F /* UTKMeController.h */,
 				7DDF65932126ADAF00A6AE4F /* UTKMeController.m */,
+				7DDF65AA2126D8E500A6AE4F /* UTKMeSettingViewController.h */,
+				7DDF65AB2126D8E500A6AE4F /* UTKMeSettingViewController.m */,
+				7DDF65AD2126D97000A6AE4F /* UTKMeSearchFriendViewController.h */,
+				7DDF65AE2126D97000A6AE4F /* UTKMeSearchFriendViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -441,6 +454,8 @@
 			children = (
 				7DDF65952126ADC700A6AE4F /* UTKUnderTheKitchenController.h */,
 				7DDF65962126ADC700A6AE4F /* UTKUnderTheKitchenController.m */,
+				7DDF65A72126D78400A6AE4F /* UTKBasketViewController.h */,
+				7DDF65A82126D78400A6AE4F /* UTKBasketViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -712,6 +727,7 @@
 				7DDF658E2126AD8C00A6AE4F /* UTKFairController.m in Sources */,
 				7DDF658B2126AD6C00A6AE4F /* UTKCollectionController.m in Sources */,
 				7DDF65882126AD3C00A6AE4F /* UTKTabBarController.m in Sources */,
+				7DDF65AC2126D8E500A6AE4F /* UTKMeSettingViewController.m in Sources */,
 				7DD3CCE6211937F200D2BCBE /* main.m in Sources */,
 				7DDF659D2126B3DA00A6AE4F /* UIView+UTKExtension.m in Sources */,
 				7DDF65852126AD0F00A6AE4F /* UTKNavigationController.m in Sources */,
@@ -719,7 +735,9 @@
 				7DDF65972126ADC700A6AE4F /* UTKUnderTheKitchenController.m in Sources */,
 				7DDF659A2126ADFB00A6AE4F /* UTKCommonController.m in Sources */,
 				7DDF65942126ADAF00A6AE4F /* UTKMeController.m in Sources */,
+				7DDF65A92126D78400A6AE4F /* UTKBasketViewController.m in Sources */,
 				7DD3CCD8211937F100D2BCBE /* AppDelegate.m in Sources */,
+				7DDF65AF2126D97000A6AE4F /* UTKMeSearchFriendViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

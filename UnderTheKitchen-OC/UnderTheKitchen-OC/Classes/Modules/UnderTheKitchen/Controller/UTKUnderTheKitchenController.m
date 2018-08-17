@@ -7,7 +7,7 @@
 //
 
 #import "UTKUnderTheKitchenController.h"
-
+#import "UTKBasketViewController.h"
 @interface UTKUnderTheKitchenController ()
 
 @end
@@ -22,7 +22,9 @@
 }
 
 -(void)rightNavUnderTheKitchenOnClick{
-    
+    UTKBasketViewController *basketVc= [[UTKBasketViewController alloc] init];
+    basketVc.title=@"菜篮子";
+    [self.navigationController pushViewController:basketVc animated:YES];
 }
 
 -(void)leftNavUnderTheKitchenOnClick{

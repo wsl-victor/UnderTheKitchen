@@ -91,7 +91,7 @@
         UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]
                                            initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
                                            target:nil action:nil];
-        negativeSpacer.width = -15;
+        negativeSpacer.width = -20;
         // 设置导航栏按钮
         viewController.navigationItem.leftBarButtonItems =[NSArray arrayWithObjects:negativeSpacer,rightBar,nil];
         
