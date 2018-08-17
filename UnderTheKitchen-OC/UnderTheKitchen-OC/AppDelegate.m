@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#define  VERSION_INFO_CURRENT @"version_code"
+#import "UTKTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    // 1.创建窗口
+    self.window = [[UIWindow alloc] init];
+    self.window.frame = [UIScreen mainScreen].bounds;
+    self.window.rootViewController=[[UTKTabBarController alloc] init];
+    // 2.显示窗口(成为主窗口)
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
@@ -45,6 +53,31 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+
++ (BOOL)isShow
+{
+    // 读取版本信息
+    NSUserDefaults *user = [NSUserDefaults standardUserDefaults];
+    NSString *localVersion = [user objectForKey:VERSION_INFO_CURRENT];
+    NSString *currentVersion =[[NSBundle mainBundle].infoDictionary objectForKey:@"CFBundleShortVersionString"];
+    if (localVersion == nil || ![currentVersion isEqualToString:localVersion]) {
+        
+        return YES;
+    }else
+    {
+        return NO;
+    }
+}
+
+// 保存版本信息
++ (void)saveCurrentVersion
+{
+    NSString *version =[[NSBundle mainBundle].infoDictionary objectForKey:@"CFBundleShortVersionString"];
+    NSUserDefaults *user = [NSUserDefaults standardUserDefaults];
+    [user setObject:version forKey:VERSION_INFO_CURRENT];
+    [user synchronize];
 }
 
 
