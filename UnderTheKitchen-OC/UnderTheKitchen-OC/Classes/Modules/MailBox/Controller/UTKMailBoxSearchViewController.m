@@ -1,28 +1,26 @@
 //
-//  UTKMailBoxController.m
+//  UTKMailBoxSearchViewController.m
 //  UnderTheKitchen-OC
 //
 //  Created by jyapp on 2018/8/17.
 //  Copyright © 2018年 wsl. All rights reserved.
 //
 
-#import "UTKMailBoxController.h"
 #import "UTKMailBoxSearchViewController.h"
-@interface UTKMailBoxController ()
+
+@interface UTKMailBoxSearchViewController ()
 
 @end
 
-@implementation UTKMailBoxController
+@implementation UTKMailBoxSearchViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self setLeftTitleButtonTitle:@"" color:[UIColor blackColor] image:[UIImage imageNamed:@"writeMessage_22x22_"] position:UTKImagePositionRight action:@selector(leftNavOnClick)];
-}
-
--(void)leftNavOnClick{
-    UTKMailBoxSearchViewController *mbSearchVc = [[UTKMailBoxSearchViewController alloc] init];
-    [self.navigationController pushViewController:mbSearchVc animated:YES];
+    
+    UISearchBar *searchB = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, 100, 44)];
+    self.navigationItem.titleView = searchB;
+    
 }
 
 - (void)didReceiveMemoryWarning {

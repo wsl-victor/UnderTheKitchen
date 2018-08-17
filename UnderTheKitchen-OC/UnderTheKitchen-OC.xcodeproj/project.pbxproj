@@ -31,6 +31,7 @@
 		7DDF65A92126D78400A6AE4F /* UTKBasketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDF65A82126D78400A6AE4F /* UTKBasketViewController.m */; };
 		7DDF65AC2126D8E500A6AE4F /* UTKMeSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDF65AB2126D8E500A6AE4F /* UTKMeSettingViewController.m */; };
 		7DDF65AF2126D97000A6AE4F /* UTKMeSearchFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDF65AE2126D97000A6AE4F /* UTKMeSearchFriendViewController.m */; };
+		7DDF65B22126E7B500A6AE4F /* UTKMailBoxSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDF65B12126E7B500A6AE4F /* UTKMailBoxSearchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,8 @@
 		7DDF65AB2126D8E500A6AE4F /* UTKMeSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UTKMeSettingViewController.m; sourceTree = "<group>"; };
 		7DDF65AD2126D97000A6AE4F /* UTKMeSearchFriendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UTKMeSearchFriendViewController.h; sourceTree = "<group>"; };
 		7DDF65AE2126D97000A6AE4F /* UTKMeSearchFriendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UTKMeSearchFriendViewController.m; sourceTree = "<group>"; };
+		7DDF65B02126E7B500A6AE4F /* UTKMailBoxSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UTKMailBoxSearchViewController.h; sourceTree = "<group>"; };
+		7DDF65B12126E7B500A6AE4F /* UTKMailBoxSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UTKMailBoxSearchViewController.m; sourceTree = "<group>"; };
 		8CEE54B9963643EE003BF3C1 /* Pods-UnderTheKitchen-OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnderTheKitchen-OC.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnderTheKitchen-OC/Pods-UnderTheKitchen-OC.release.xcconfig"; sourceTree = "<group>"; };
 		D1D36FEED121F2FE791F0DDF /* Pods-UnderTheKitchen-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnderTheKitchen-OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnderTheKitchen-OC/Pods-UnderTheKitchen-OC.debug.xcconfig"; sourceTree = "<group>"; };
 		F712F5A005AEBC0EA583A556 /* Pods_UnderTheKitchen_OC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnderTheKitchen_OC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -368,6 +371,8 @@
 			children = (
 				7DDF658F2126ADA100A6AE4F /* UTKMailBoxController.h */,
 				7DDF65902126ADA100A6AE4F /* UTKMailBoxController.m */,
+				7DDF65B02126E7B500A6AE4F /* UTKMailBoxSearchViewController.h */,
+				7DDF65B12126E7B500A6AE4F /* UTKMailBoxSearchViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -723,6 +728,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DDF65B22126E7B500A6AE4F /* UTKMailBoxSearchViewController.m in Sources */,
 				7DDF65912126ADA100A6AE4F /* UTKMailBoxController.m in Sources */,
 				7DDF658E2126AD8C00A6AE4F /* UTKFairController.m in Sources */,
 				7DDF658B2126AD6C00A6AE4F /* UTKCollectionController.m in Sources */,

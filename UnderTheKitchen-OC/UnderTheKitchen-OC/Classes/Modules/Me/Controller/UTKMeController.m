@@ -31,6 +31,7 @@
 
 -(void)rightnavFindFriendsOnClick{
     UTKMeSearchFriendViewController *meSearchFriendVc = [[UTKMeSearchFriendViewController alloc] init];
+    meSearchFriendVc.title = @"设置";
     [self.navigationController pushViewController:meSearchFriendVc animated:YES];
 }
 

@@ -35,11 +35,13 @@
     bt.titleLabel.font = [UIFont systemFontOfSize:15];
     [bt addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
     [bt sizeToFit];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:bt];
+    UIBarButtonItem *btitem = [[UIBarButtonItem alloc] initWithCustomView:bt];
+    self.navigationItem.rightBarButtonItems = @[btitem];
 }
 
 - (void)setRightTitleButtonsImage:(UIImage *)image action:(SEL)action withImage:(UIImage *)withimage withaction:(SEL)withaction {
     
+    UIView *view =[[UIView alloc] initWithFrame:CGRectMake(0, 0, 80, 44)];
     UIButton *bt  = [UIButton buttonWithType:UIButtonTypeCustom];
     [bt setImage:image forState:UIControlStateNormal];
     [bt setImage:image forState:UIControlStateHighlighted];
@@ -47,20 +49,28 @@
     [bt setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [bt addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
     [bt sizeToFit];
+    bt.frame = CGRectMake(0, 0, 40, 44);
+    //UIBarButtonItem *btitem = [[UIBarButtonItem alloc] initWithCustomView:bt];
 //
-    UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]
-                                       initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
-                                       target:nil action:nil];
-    negativeSpacer.width = 15;
+//    UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]
+//                                       initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
+//                                       target:nil action:nil];
+//    negativeSpacer.width = 15;
     
     UIButton *withbt  = [UIButton buttonWithType:UIButtonTypeCustom];
     [withbt setImage:withimage forState:UIControlStateNormal];
-    [bt setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [withbt setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [withbt setImage:withimage forState:UIControlStateHighlighted];
     withbt.titleLabel.font = [UIFont systemFontOfSize:15];
     [withbt addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
     [withbt sizeToFit];
-    self.navigationItem.rightBarButtonItems =@[[[UIBarButtonItem alloc] initWithCustomView:withbt],negativeSpacer,[[UIBarButtonItem alloc] initWithCustomView:bt]];
+    withbt.frame = CGRectMake(80-40, 0, 40, 44);
+    
+    [view addSubview:bt];
+    [view addSubview:withbt];
+    
+    UIBarButtonItem *withbtitem = [[UIBarButtonItem alloc] initWithCustomView:view];
+    self.navigationItem.rightBarButtonItems =@[withbtitem];
 }
 
 
@@ -75,7 +85,8 @@
     [bt addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
     [bt setImagePosition:position spacing:1.0];
     [bt sizeToFit];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:bt];
+    UIBarButtonItem *btitem = [[UIBarButtonItem alloc] initWithCustomView:bt];
+    self.navigationItem.leftBarButtonItems = @[btitem];
     
 }
 
