@@ -33,8 +33,10 @@
     [bt setImage:image forState:UIControlStateHighlighted];
     [bt setTitleColor:color forState:UIControlStateNormal];
     bt.titleLabel.font = [UIFont systemFontOfSize:15];
+    
     [bt addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
     [bt sizeToFit];
+    bt.imageEdgeInsets = UIEdgeInsetsMake(5, 0, -5, 0);
     UIBarButtonItem *btitem = [[UIBarButtonItem alloc] initWithCustomView:bt];
     self.navigationItem.rightBarButtonItems = @[btitem];
 }
@@ -84,7 +86,7 @@
     bt.titleLabel.font = [UIFont systemFontOfSize:15];
     [bt addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
     [bt setImagePosition:position spacing:1.0];
-    [bt sizeToFit];
+    [bt sizeToFit]; bt.imageEdgeInsets = UIEdgeInsetsMake(5, 0, -5, 0);
     UIBarButtonItem *btitem = [[UIBarButtonItem alloc] initWithCustomView:bt];
     self.navigationItem.leftBarButtonItems = @[btitem];
     

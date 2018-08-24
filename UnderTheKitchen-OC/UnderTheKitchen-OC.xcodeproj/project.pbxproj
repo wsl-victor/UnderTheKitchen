@@ -32,6 +32,8 @@
 		7DDF65AC2126D8E500A6AE4F /* UTKMeSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDF65AB2126D8E500A6AE4F /* UTKMeSettingViewController.m */; };
 		7DDF65AF2126D97000A6AE4F /* UTKMeSearchFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDF65AE2126D97000A6AE4F /* UTKMeSearchFriendViewController.m */; };
 		7DDF65B22126E7B500A6AE4F /* UTKMailBoxSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDF65B12126E7B500A6AE4F /* UTKMailBoxSearchViewController.m */; };
+		7DE5E6B5212FA84F00F64DCB /* UTKSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE5E6B4212FA84F00F64DCB /* UTKSearchBar.m */; };
+		7DE5E6BB212FB7AB00F64DCB /* UTKUnderSearchMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE5E6BA212FB7AB00F64DCB /* UTKUnderSearchMenuViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +101,10 @@
 		7DDF65AE2126D97000A6AE4F /* UTKMeSearchFriendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UTKMeSearchFriendViewController.m; sourceTree = "<group>"; };
 		7DDF65B02126E7B500A6AE4F /* UTKMailBoxSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UTKMailBoxSearchViewController.h; sourceTree = "<group>"; };
 		7DDF65B12126E7B500A6AE4F /* UTKMailBoxSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UTKMailBoxSearchViewController.m; sourceTree = "<group>"; };
+		7DE5E6B3212FA84F00F64DCB /* UTKSearchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UTKSearchBar.h; sourceTree = "<group>"; };
+		7DE5E6B4212FA84F00F64DCB /* UTKSearchBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UTKSearchBar.m; sourceTree = "<group>"; };
+		7DE5E6B9212FB7AB00F64DCB /* UTKUnderSearchMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UTKUnderSearchMenuViewController.h; sourceTree = "<group>"; };
+		7DE5E6BA212FB7AB00F64DCB /* UTKUnderSearchMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UTKUnderSearchMenuViewController.m; sourceTree = "<group>"; };
 		8CEE54B9963643EE003BF3C1 /* Pods-UnderTheKitchen-OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnderTheKitchen-OC.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnderTheKitchen-OC/Pods-UnderTheKitchen-OC.release.xcconfig"; sourceTree = "<group>"; };
 		D1D36FEED121F2FE791F0DDF /* Pods-UnderTheKitchen-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnderTheKitchen-OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnderTheKitchen-OC/Pods-UnderTheKitchen-OC.debug.xcconfig"; sourceTree = "<group>"; };
 		F712F5A005AEBC0EA583A556 /* Pods_UnderTheKitchen_OC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnderTheKitchen_OC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -210,6 +216,7 @@
 		7DDF655D2126ABBD00A6AE4F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				7DE5E6B2212FA7FE00F64DCB /* View */,
 				7DDF655E2126ABBD00A6AE4F /* Navigation */,
 				7DDF655F2126ABBD00A6AE4F /* NetWork */,
 				7DDF65602126ABBD00A6AE4F /* TabBar */,
@@ -461,6 +468,8 @@
 				7DDF65962126ADC700A6AE4F /* UTKUnderTheKitchenController.m */,
 				7DDF65A72126D78400A6AE4F /* UTKBasketViewController.h */,
 				7DDF65A82126D78400A6AE4F /* UTKBasketViewController.m */,
+				7DE5E6B9212FB7AB00F64DCB /* UTKUnderSearchMenuViewController.h */,
+				7DE5E6BA212FB7AB00F64DCB /* UTKUnderSearchMenuViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -519,6 +528,15 @@
 				7DDF65A52126D59100A6AE4F /* placeholder */,
 			);
 			path = Vendors;
+			sourceTree = "<group>";
+		};
+		7DE5E6B2212FA7FE00F64DCB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7DE5E6B3212FA84F00F64DCB /* UTKSearchBar.h */,
+				7DE5E6B4212FA84F00F64DCB /* UTKSearchBar.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		C258BED6F009FAEA08459668 /* Pods */ = {
@@ -730,6 +748,7 @@
 			files = (
 				7DDF65B22126E7B500A6AE4F /* UTKMailBoxSearchViewController.m in Sources */,
 				7DDF65912126ADA100A6AE4F /* UTKMailBoxController.m in Sources */,
+				7DE5E6B5212FA84F00F64DCB /* UTKSearchBar.m in Sources */,
 				7DDF658E2126AD8C00A6AE4F /* UTKFairController.m in Sources */,
 				7DDF658B2126AD6C00A6AE4F /* UTKCollectionController.m in Sources */,
 				7DDF65882126AD3C00A6AE4F /* UTKTabBarController.m in Sources */,
@@ -742,6 +761,7 @@
 				7DDF659A2126ADFB00A6AE4F /* UTKCommonController.m in Sources */,
 				7DDF65942126ADAF00A6AE4F /* UTKMeController.m in Sources */,
 				7DDF65A92126D78400A6AE4F /* UTKBasketViewController.m in Sources */,
+				7DE5E6BB212FB7AB00F64DCB /* UTKUnderSearchMenuViewController.m in Sources */,
 				7DD3CCD8211937F100D2BCBE /* AppDelegate.m in Sources */,
 				7DDF65AF2126D97000A6AE4F /* UTKMeSearchFriendViewController.m in Sources */,
 			);

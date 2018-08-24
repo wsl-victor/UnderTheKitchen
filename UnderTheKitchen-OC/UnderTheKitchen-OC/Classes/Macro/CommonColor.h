@@ -18,4 +18,8 @@
 //tabbar文字颜色
 #define  UTKTabBarTextColor   CommonColorRGB(230,111,89)
 
+//搜索框颜色
+#define  UTKSearchBarColor   CommonColorRGB(236,236,236)
+
+
 #endif /* CommonColor_h */

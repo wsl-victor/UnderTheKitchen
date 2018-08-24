@@ -31,7 +31,7 @@ class UTKNavigationController: UINavigationController {
             let rightBar = UIBarButtonItem.init(customView: backBt)
             
             let nagationSpace = UIBarButtonItem.init(barButtonSystemItem: UIBarButtonSystemItem.fixedSpace, target: nil, action: nil)
-            nagationSpace.width = -20
+            nagationSpace.width = -25
             
             viewController.navigationItem.leftBarButtonItems = [nagationSpace,rightBar]
         }
